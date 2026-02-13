@@ -1,0 +1,9 @@
+# Entornos virtuales
+venv/
+
+# Caché de Python
+__pycache__/
+
+# Archivos del sistema
+*.log
+*.tmp
