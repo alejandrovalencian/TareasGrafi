@@ -1,2 +1,2 @@
 print("Proyecto de graficación iniciado")
-print("hola")
+print("Gibran estuvo aquí")
