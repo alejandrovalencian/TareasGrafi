@@ -2,31 +2,23 @@ import cv2
 import numpy as np
 
 # Leer la imagen
-img = cv2.imread('frutas.png')
+img = cv2.imread('imagen.jpg')
 
 # Convertir la imagen al espacio de color HSV
 hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
-# Rango 1 de rojo
-lower_red1 = np.array([0, 100, 100])
-upper_red1 = np.array([10, 255, 255])
+# Definir el rango inferior y superior para detectar rojo
+lower_green = np.array([0, 100, 100])  
+upper_green = np.array([10, 255, 255])  
 
-# Rango 2 de rojo
-lower_red2 = np.array([170, 100, 100])
-upper_red2 = np.array([179, 255, 255])
+# Crear una máscara que solo incluya los píxeles dentro del rango
+mask = cv2.inRange(hsv, lower_green, upper_green)
 
-# Crear máscaras
-mask1 = cv2.inRange(hsv, lower_red1, upper_red1)
-mask2 = cv2.inRange(hsv, lower_red2, upper_red2)
-
-# Unir las dos máscaras
-mask = mask1 + mask2
-
-# Aplicar la máscara
+# Aplicar la máscara a la imagen original
 result = cv2.bitwise_and(img, img, mask=mask)
 
-# Mostrar resultados
+# Mostrar la imagen original y la imagen con el color detectado
 cv2.imshow("Imagen Original", img)
-cv2.imshow("Color Rojo Detectado", result)
+cv2.imshow("Color Detectado", result)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
