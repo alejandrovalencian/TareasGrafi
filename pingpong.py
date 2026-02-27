@@ -4,7 +4,9 @@ import numpy as np
 img = np.ones((500,500,3), np.uint8)*255
 
 x = 250
+y = 250
 dx = 5
+dy = 5
 
 for i in range(400):
 
@@ -12,17 +14,18 @@ for i in range(400):
 
     # mover pelota
     x = x + dx
+    y = y + dy
 
     # rebote izquierda y derecha
     if x <= 20 or x >= 480:
         dx = -dx
 
-    # paletas fijas
-    cv.rectangle(img, (10,200), (20,300), (234,56,100), -1)
-    cv.rectangle(img, (480,200), (490,300), (234,56,100), -1)
+    # rebote arriba y abajo
+    if y <= 20 or y >= 480:
+        dy = -dy
 
-    # pelota
-    cv.circle(img, (x,250), 20, (0,0,255), -1)
+    # dibujar pelota
+    cv.circle(img, (x,y), 20, (0,0,255), -1)
 
     cv.imshow('img', img)
     cv.waitKey(70)
