@@ -14,7 +14,7 @@ for i in range(x):
     for j in range(y):
                    #orig_x = int(i * scale_y)
                    #orig_y = int(j * scale_x)
-                   scaled_img[int(i*2), int(j*2)] = img[i, j]
+                   scaled_img[int(i*1.7), int(j*1.7)] = img[i, j]
 
 # Mostrar la imagen original y la escalada
 cv.imshow('Imagen Original', img)
