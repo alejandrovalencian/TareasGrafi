@@ -13,10 +13,10 @@ while True:
         img = cv.rectangle(img, (x,y), (x+w, y+h), (234, 23,23), 5)
 
         # OJOS
-        img = cv.circle(img, (x + int(w*0.3), y + int(h*0.4)) , 20, (255,255,255), -1 )
-        img = cv.circle(img, (x + int(w*0.7), y + int(h*0.4)) , 20, (255,255,255), -1 )
-        img = cv.circle(img, (x + int(w*0.3), y + int(h*0.4)) , 5, (0,0,0), -1 )
-        img = cv.circle(img, (x + int(w*0.7), y + int(h*0.4)) , 5, (0,0,0), -1 )
+        img = cv.circle(img, (x + int(w*0.3), y + int(h*0.4)) , 30, (255,255,255), -1 )
+        img = cv.circle(img, (x + int(w*0.7), y + int(h*0.4)) , 30, (255,255,255), -1 )
+        img = cv.circle(img, (x + int(w*0.3), y + int(h*0.4)) , 10, (0,0,0), -1 )
+        img = cv.circle(img, (x + int(w*0.7), y + int(h*0.4)) , 10, (0,0,0), -1 )
 
         # NARIZ DE PERRO
         cv.ellipse(img,(x+int(w*0.5),y+int(h*0.65)),(int(w*0.15),int(h*0.08)),0,0,360,(40,40,40),-1)
