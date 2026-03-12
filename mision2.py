@@ -52,3 +52,4 @@ cv2.imshow("Modo OpenCV", rotada)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+5
