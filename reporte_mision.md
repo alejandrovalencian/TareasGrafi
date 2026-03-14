@@ -38,8 +38,9 @@ if img is not None:
     
 else:
     print("Error")
+```  
 ![Resultado Mision 1](imagenes/m1_revelada_numpy.png)
-```    
+  
 ### Mision 2
 ```python
 import cv2
