@@ -79,6 +79,7 @@ cv2.imshow("QR reconstruido", lienzo)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
+![Resultado Mision 2](imagenes/m2_resultado.png)
 
 ### Mision 3
 ```python
@@ -107,6 +108,7 @@ cv2.imshow("sello", lienzo)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
+![Resultado Mision 3](imagenes/m3_sello_forjado.png)
 
 ### Mision 4
 ```python
@@ -131,6 +133,8 @@ cv2.imshow("mascara cyan", mascara)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
+![Resultado Mision 4](imagenes/m4_mascara.png)
+
 
 ### Mision 5
 ```python
@@ -161,6 +165,7 @@ cv2.imshow("curva", lienzo)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
+![Resultado Mision 5](imagenes/m5_curva.png)
 
 ##  Análisis del Analista (Reflexiones Finales)
 
