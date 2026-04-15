@@ -88,7 +88,7 @@ with HandLandmarker.create_from_options(options) as landmarker:
                     cv2.putText(frame, f"{int(distancia)} px", (cx_medio, cy_medio), 
                                 cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 255), 2)
 
-        cv2.circle(frame, (450,300), int(distancia), (21,34,234), -1)            
+        cv2.circle(frame, (200,200), int(distancia), (21,34,234), -1)            
         # Mostrar la imagen
         cv2.imshow("Salida", frame)
 
