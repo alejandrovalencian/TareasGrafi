@@ -152,7 +152,7 @@ cv2.imwrite("m4_mask_cyan.png", mask)
 ```  
 
 ### Misión 5
-- Evidencia tricolor: ![Resultado Mision 5](imagenes7m5_tricolor.png)
+- Evidencia tricolor: ![Resultado Mision 5](imagenes/m5_tricolor.png)
 - Mensaje recuperado: ![Resultado Mision 5](imagenes/m5_mensaje.png)
 - Código:
 ```python
