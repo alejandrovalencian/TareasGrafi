@@ -4,8 +4,8 @@
 ---
 ## Evidencias
 ### Misión 1
-- Imagen recuperada x50: (imagenes/m1_recuperado_x50.png)
-- Imagen recuperada x50 + 20: (imagenes/m1_recuperado_x50_mas20.png)
+- Imagen recuperada x50: ![Resultado Mision 1](imagenes/m1_recuperado_x50.png)
+- Imagen recuperada x50 + 20: ![Resultado Mision 1](imagenes/m1_recuperado_x50_mas20.png)
 - Código:
 ```python
 import cv2
@@ -44,7 +44,7 @@ cv2.imwrite("m1_recuperado_vec.png", vec)
 ```  
 
 ### Misión 2
-- QR reconstruido: (imagenes/m2_qr_reconstruido.png)
+- QR reconstruido: ![Resultado Mision 2](imagenes/m2_qr_reconstruido.png)
 - Código:
 ```python
 import cv2
@@ -81,7 +81,7 @@ cv2.imwrite("m2_qr_reconstruido.png", lienzo)
 ```  
 
 ### Misión 3
-- Sello forjado: (imagenes/m3_sello_forjado_v2.png)
+- Sello forjado: ![Resultado Mision 3](imagenes/m3_sello_forjado_v2.png)
 - Código:
 ```python
 import cv2
@@ -121,7 +121,7 @@ cv2.imwrite("m3_sello_forjado_v2.png", img)
 ```  
 
 ### Misión 4
-- Máscara Cyan: (imagenes/m4_suavizada.png)
+- Máscara Cyan: ![Resultado Mision 4](imagenes/m4_suavizada.png)
 - Código:
 ```python
 import cv2
@@ -152,8 +152,8 @@ cv2.imwrite("m4_mask_cyan.png", mask)
 ```  
 
 ### Misión 5
-- Evidencia tricolor: (imagenes7m5_tricolor.png)
-- Mensaje recuperado: (imagenes/m5_mensaje.png)
+- Evidencia tricolor: ![Resultado Mision 5](imagenes7m5_tricolor.png)
+- Mensaje recuperado: ![Resultado Mision 5](imagenes/m5_mensaje.png)
 - Código:
 ```python
 import cv2
