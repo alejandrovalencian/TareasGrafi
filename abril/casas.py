@@ -79,7 +79,7 @@ def draw_ground():
     glVertex3f(-10, 0, -10)
     glEnd()
 
-def draw_house():
+def draw_scene():
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
     glLoadIdentity()
 
@@ -87,20 +87,11 @@ def draw_house():
               0, 1, 0,
               0, 1, 0)
 
+    glRotatef(45, 1, 0, 0)
+
     draw_ground()
-
-    # ---- INCLINACIÓN REAL ----
-    glPushMatrix()
-
-    glTranslatef(0, 1, 0)      # centro
-    glRotatef(45, 1, 0, 0)     # inclinar sobre eje X 🔥
-    glTranslatef(0, -1, 0)
-
     draw_cube()
     draw_roof()
-
-    glPopMatrix()
-    # -------------------------
 
     glfw.swap_buffers(window)
 
@@ -110,7 +101,7 @@ def main():
     if not glfw.init():
         sys.exit()
 
-    window = glfw.create_window(800, 600, "Casa INCLINADA", None, None)
+    window = glfw.create_window(800, 600, "TODO INCLINADO", None, None)
     if not window:
         glfw.terminate()
         sys.exit()
@@ -120,7 +111,7 @@ def main():
     init()
 
     while not glfw.window_should_close(window):
-        draw_house()
+        draw_scene()
         glfw.poll_events()
 
     glfw.terminate()
