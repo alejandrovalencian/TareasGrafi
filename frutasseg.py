@@ -8,11 +8,11 @@ img = cv2.imread('frutas.png')
 hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
 # Rango 1 de rojo
-lower_red1 = np.array([0, 100, 100])
+lower_red1 = np.array([50, 100, 100])
 upper_red1 = np.array([85, 255, 255])
 
 # Rango 2 de rojo
-lower_red2 = np.array([0, 100, 100])
+lower_red2 = np.array([50, 100, 100])
 upper_red2 = np.array([85, 255, 255])
 
 # Crear máscaras
