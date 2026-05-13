@@ -42,7 +42,7 @@ WINDOW_TITLE = "Orbita Dual (GLFW) — 1/2/3 cambia modo"
 INITIAL_MODE = 1  # 1, 2 o 3
 ORBIT_RADIUS = 5.0
 CAM_DISTANCE = 5.0  # alejamiento en -Z en modos 1 y 2
-ANGLE_SPEED = 0.6  # grados por frame (sube/baja para animar más rápido)
+ANGLE_SPEED = 3.6  # grados por frame (sube/baja para animar más rápido)
 
 # Misión 3: pon True y completa la colocación de la luz respecto a la cámara/objeto
 USE_LIGHTING = False
