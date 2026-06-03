@@ -4,36 +4,6 @@
   Tecnologías: Python 3 · NumPy · OpenCV
 =============================================================
 
-  ESCENAS (timeline 60 s, 6 bloques × 10 s)
-  ─────────────────────────────────────────
-  0  Credits / Intro   — cancha + pelota pulsante + texto
-  1  Lissajous Ball    — pelota sigue curva de Lissajous
-  2  Rosa Polar        — curva rosa polar (vista aérea)
-  3  Spirograph Kick   — hipotrocoide + epicicloide + parábola
-  4  Partículas Estadio— confeti + luces + ola sinusoidal
-  5  Fuego de Gol      — heatmap + "GOOOL" pulsante
-
-  CURVAS PARAMÉTRICAS (6 distintas)
-  ────────────────────────────────────
-  1. Lissajous animada          (scene 1)
-  2. Rosa polar r=cos(k·θ)      (scene 2)
-  3. Círculo (tiro de esquina)  (scene 2)
-  4. Hipotrocoide               (scene 3)
-  5. Epicicloide                (scene 3)
-  6. Sinusoide de ola           (scene 4)
-
-  TRANSFORMACIONES (2 explícitas con matrices afines 2×3)
-  ────────────────────────────────────────────────────────
-  • Rotación 2-D  → curva Lissajous + pelota (scene 1)
-  • Escala        → zoom pulsante en spirograph (scene 3)
-  • Composición addWeighted → transiciones de escena
-  • Espejo (flip) → texto en créditos (scene 0)
-
-  POST-FX
-  ─────────────────────────────────────────────────────
-  • Viñeta radial   (todas las escenas)
-  • Scanlines retro (todas las escenas)
-  • Posterize       (todas las escenas)
 =============================================================
 """
 

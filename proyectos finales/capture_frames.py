@@ -8,7 +8,7 @@ Genera la carpeta renders/ con:
 Uso:
     python capture_frames.py
 
-Requiere haber ejecutado demo.py al menos una vez (para que exista
+Requiere haber ejecutado demo_futbol.py al menos una vez (para que exista
 demo_futbol.mp4), aunque puede correr de forma independiente para
 generar solo las capturas.
 """
@@ -19,8 +19,8 @@ import math
 import numpy as np
 import cv2
 
-# ── Importamos todo desde demo.py ──────────────────────────────────────────
-from demo import (
+# ── Importamos todo desde demo_futbol.py ───────────────────────────────────
+from demo_futbol import (
     W, H, FPS,
     scene_credits, scene_lissajous, scene_rose_polar,
     scene_spirograph, scene_fire, scene_particles,
@@ -86,19 +86,19 @@ def main():
 
         out_path = os.path.join(OUTPUT_DIR, f"{filename}.png")
         cv2.imwrite(out_path, frame)
-        print(f"    ✓ Guardado: {out_path}")
+        print(f"    Guardado: {out_path}")
 
     # Copiar el video si existe
     video_src = "demo_futbol.mp4"
     video_dst = os.path.join(OUTPUT_DIR, "demo_futbol.mp4")
     if os.path.exists(video_src):
         shutil.copy2(video_src, video_dst)
-        print(f"\n  ✓ Video copiado a: {video_dst}")
+        print(f"\n  Video copiado a: {video_dst}")
     else:
-        print(f"\n  ⚠  Video '{video_src}' no encontrado.")
-        print("     Ejecuta primero 'python demo.py' para generarlo.")
+        print(f"\n  AVISO: Video '{video_src}' no encontrado.")
+        print("     Ejecuta primero 'python demo_futbol.py' para generarlo.")
 
-    print(f"\n[capture_frames] ¡Listo! {len(SCENE_SNAPSHOTS)} capturas guardadas en ./{OUTPUT_DIR}/")
+    print(f"\n[capture_frames] Listo! {len(SCENE_SNAPSHOTS)} capturas guardadas en ./{OUTPUT_DIR}/")
 
 
 if __name__ == "__main__":
